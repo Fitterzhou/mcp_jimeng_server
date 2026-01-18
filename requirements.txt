@@ -1,0 +1,7 @@
+mcp
+uvicorn
+httpx
+pillow
+python-dotenv
+starlette
+fastapi

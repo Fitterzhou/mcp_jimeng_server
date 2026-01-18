@@ -1,0 +1,4 @@
+__pycache__/
+.env
+static_images_9007/
+*.log
