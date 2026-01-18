@@ -22,7 +22,8 @@
 
 ```bash
 # 拉取代码
-git clone [https://github.com/Fitterzhou/mcp_jimeng_server.git](https://github.com/Fitterzhou/mcp_jimeng_server.git)
+git clone https://github.com/Fitterzhou/mcp_jimeng_server.git
+
 cd mcp_jimeng_server
 
 # 安装依赖
