@@ -22,7 +22,7 @@
 
 ```bash
 # 拉取代码
-git clone [https://github.com/你的用户名/mcp_jimeng_server.git](https://github.com/你的用户名/mcp_jimeng_server.git)
+git clone [https://github.com/Fitterzhou/mcp_jimeng_server.git](https://github.com/Fitterzhou/mcp_jimeng_server.git)
 cd mcp_jimeng_server
 
 # 安装依赖
@@ -32,21 +32,24 @@ pip install -r requirements.txt
 
 ### 2. 配置环境变量
 
-新建 `.env` 文件（不要上传到 GitHub），填入以下内容：
+新建 `.env` 文件，填入以下内容：
 
 ```ini
 # 服务配置
 SERVER_PORT=9007
 # 本地填 127.0.0.1，云服务器填公网 IP
-SERVER_HOST_URL=[http://127.0.0.1:9007](http://127.0.0.1:9007)
+SERVER_HOST_URL=http://127.0.0.1:9007
 
 # API 配置
-JIMENG_BASE_URL=[https://jm.a380.top](https://jm.a380.top)
-JIMENG_API_KEY=sk-你的密钥
+JIMENG_BASE_URL=
+#“即梦接口”或者“你的API代理接口”
+
+JIMENG_API_KEY=“xxxx....."
+#“即梦API”,仅字符串
 
 # 字体路径
 FONT_PATH=handwriting.ttf
-
+# 任何你想要的字体，改名为handwriting.ttf，上传在mcp_jimeng.py相同目录下
 ```
 
 ### 3. 启动服务
