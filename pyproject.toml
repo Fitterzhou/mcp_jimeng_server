@@ -1,0 +1,19 @@
+[project]
+name = "mcp-jimeng"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Fitterzhou", email = "faciozabalahurtado@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.25.0",
+]
+
+[project.scripts]
+mcp-jimeng = "mcp_jimeng:main"
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
