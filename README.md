@@ -28,7 +28,7 @@ cd mcp_jimeng_server
 # 安装依赖
 pip install -r requirements.txt
 
-2. 配置环境变量
+### 2. 配置环境变量
 新建 .env 文件（不要上传到 GitHub），填入以下内容：
 
 Ini, TOML
@@ -44,7 +44,7 @@ JIMENG_API_KEY=sk-你的密钥
 
 # 字体路径
 FONT_PATH=handwriting.ttf
-3. 启动服务
+### 3. 启动服务
 Bash
 
 # 本地启动
@@ -52,7 +52,8 @@ python mcp_jimeng.py
 
 # 云服务器后台运行
 nohup python3 mcp_jimeng.py > output.log 2>&1 &
-🔌 客户端连接
+
+###🔌 客户端连接
 🍒 Cherry Studio (推荐)
 设置 -> MCP 服务器 -> 添加。
 
@@ -60,7 +61,7 @@ nohup python3 mcp_jimeng.py > output.log 2>&1 &
 
 地址填写：http://你的IP:9007/sse。
 
-🤖 n8n
+### 🤖 n8n
 使用 mcp client 节点调用：
 
 Endpoint: http://你的IP:9007/sse。
@@ -69,7 +70,7 @@ Endpoint: http://你的IP:9007/sse。
 
 Authorization: none
 
-📐 支持的分辨率列表
+### 📐 支持的分辨率列表
 支持 quality (1k/2k/4k) 和 ratio 参数。
 比例,1k 分辨率,2k 分辨率 (默认),4k 分辨率
 1:1,1024x1024,2048x2048,4096x4096
